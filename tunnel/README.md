@@ -17,7 +17,7 @@ You can use this script by following these steps:
 1. Download the script.
 
 ```shell
-wget ""
+wget "https://raw.githubusercontent.com/BlackIQ/scripts/main/tunnel/tunnel.sh"
 ```
 
 2. Run script with parameters.
