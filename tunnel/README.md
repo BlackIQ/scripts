@@ -20,7 +20,13 @@ You can use this script by following these steps:
 wget "https://raw.githubusercontent.com/BlackIQ/scripts/main/tunnel/tunnel.sh"
 ```
 
-2. Run script with parameters.
+2. Give permission to script.
+
+```shell
+chmod +x tunnel.sh
+```
+
+3. Run script with parameters.
 
 > Remember to run script as **root**
 
@@ -32,13 +38,13 @@ This file takes 2 parametes.
 You can pass them like this:
 
 ```shell
-bash tunnel.sh inside outside
+./tunnel.sh inside outside
 ```
 
 ## Example
 
 ```shell
-bash 56.42.99.4 37.87.85.9
+./tunnel.sh 56.42.99.4 37.87.85.9
 ```
 
 Now it routes all `56.42.99.4` traffics to `37.87.85.9`.
