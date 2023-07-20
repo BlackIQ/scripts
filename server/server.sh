@@ -31,6 +31,10 @@ wget "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh"
 
 chmod +x install.sh
 
+./install.sh
+
+source ~/.bashrc
+
 nvm install v18
 
 npm i -g pm2 serve create-next-app create-next-app nodemon
