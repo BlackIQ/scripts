@@ -8,7 +8,7 @@ fi
 
 apt update && apt upgrade -y
 
-apt install nginx tmux neofetch net-tools nmap mysql-server gnupg -y
+apt install nginx tmux neofetch net-tools nmap mysql-server gnupg lsb-release gpg -y
 
 type -p curl >/dev/null || (apt update && apt install curl  7 -y)
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
@@ -26,6 +26,16 @@ echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gp
 apt-get update
 
 apt-get install -y mongodb-org
+
+curl -fsSL https://packages.redis.io/gpg | gpg --dearmor -o 
+/usr/share/keyrings/redis-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] 
+https://packages.redis.io/deb $(lsb_release -cs) main" | tee 
+/etc/apt/sources.list.d/redis.list
+
+apt-get update
+apt-get install redis
 
 wget "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh"
 
