@@ -29,6 +29,8 @@ apt-get install -y mongodb-org
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
+sleep 10
+
 source ~/.bashrc
 
 nvm install v18
