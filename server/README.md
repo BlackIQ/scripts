@@ -14,28 +14,8 @@ Just server stuff.
 
 You can use this script by following these steps:
 
-1. Download the script.
+1. Download the script and runnig it!
 
 ```shell
-wget "https://raw.githubusercontent.com/BlackIQ/scripts/main/server/server.sh"
-```
-
-2. Give permission to script.
-
-```shell
-chmod +x server.sh
-```
-
-3. Run script with parameters.
-
-> Remember to run script as **root**
-
-```shell
-./server.sh
-```
-
-## Example
-
-```shell
-./server.sh
+wget -qO- "https://raw.githubusercontent.com/BlackIQ/scripts/main/server/server.sh" | bash
 ```
