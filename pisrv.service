@@ -1,0 +1,9 @@
+[Unit]
+Description=Startup Raspberry Pi By Amirhossein
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "sudo mount /dev/sda1 /var/www/smb"
+
+[Install]
+WantedBy=multi-user.target
