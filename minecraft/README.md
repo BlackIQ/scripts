@@ -19,3 +19,15 @@ You can use this script by following these steps:
 ```shell
 wget -qO- "https://raw.githubusercontent.com/BlackIQ/scripts/main/minecraft/minecraft.sh" | bash
 ```
+
+Then nano the `eula.txt` and agree the agreement with changing `false` to `true`.
+
+```shell
+nano eula.txt
+```
+
+Last, run the server!
+
+```shell
+java -Xms1024M -Xmx4G -jar minecraft_server_1.18.2.jar nogui
+```
