@@ -8,11 +8,11 @@ fi
 
 apt update && apt upgrade -y
 
-add-apt-repository ppa:openjdk-r/ppa
+add-apt-repository ppa:openjdk-r/ppa -y
 
 apt update
 
-apt install openjdk-17-jre-headless
+apt install openjdk-17-jre-headless -y
 
 ufw allow 25565
 
