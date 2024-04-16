@@ -67,3 +67,8 @@ pip3 install art
 systemctl start mysql
 systemctl start nginx
 systemctl start mongod
+
+# Welcome package
+mkdir -p /apps/welcome
+echo "import art; art.tprint('Welcome, Amir!')" > /apps/welcome/welcome.py
+echo 'python3 /apps/welcome/welcome.py' >> ~/.bashrc
